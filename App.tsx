@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { NumberSeparator, } from './src/screens/NumberSeparator'
+import { Cajas1 } from './src/screens/Cajas1'
+import { Cajas2 } from './src/screens/Cajas2'
+import { Cajas3 } from './src/screens/Cajas3'
+import { Cajas4 } from './src/screens/Cajas4'
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+      //<NumberSeparator numbers={[1,2,3,4,5,6,7,8,9,10]}></NumberSeparator>
+      //<Cajas1></Cajas1>
+      //<Cajas2></Cajas2>
+      //<Cajas3></Cajas3>
+      <Cajas4></Cajas4>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
